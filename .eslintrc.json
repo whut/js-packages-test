@@ -1,0 +1,29 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:all",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "object-curly-spacing": "off",
+    "quotes": "off",
+    "linebreak-style": "off",
+    "no-console": "off",
+    "semi": "off",
+    "indent": "off",
+    "padded-blocks": "off",
+    "function-call-argument-newline": [
+      "error",
+      "consistent"
+    ],
+    "implicit-arrow-linebreak": "off"
+  },
+  "ignorePatterns": [
+    "packages/*/lib/"
+  ]
+}

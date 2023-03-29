@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps"
+  },
+  "dependencies": {
+    "lib-a": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "eslint": "^8.37.0",
+    "standard": "^17.0.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  }
+}
