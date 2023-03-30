@@ -1,0 +1,17 @@
+{
+  "sourceMaps": true,
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": {
+          "version": "3.29",
+          "proposals": true
+        },
+        "modules": false,
+        "debug": true
+      }
+    ]
+  ]
+}
