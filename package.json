@@ -1,0 +1,17 @@
+{
+  "name": "testtypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "shx rm -rf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^5.0.3"
+  }
+}
