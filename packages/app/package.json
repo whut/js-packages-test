@@ -1,12 +1,25 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
-  "scripts": {},
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist",
+    "build:watch": "babel ./src --out-dir ./dist --watch",
+    "flow-copy": "flow-copy-source ./src ./dist",
+    "flow-copy:watch": "flow-copy-source ./src ./dist --watch",
+    "watch": "npm-run-all --parallel --print-label build:watch flow-copy:watch"
+  },
   "dependencies": {
-    "flow-bin": "^0.203.1"
+    "lib-a": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-flow": "^7.21.4",
+    "flow-bin": "^0.203.1",
+    "flow-copy-source": "^2.0.9",
+    "npm-run-all": "^4.1.5"
   }
 }

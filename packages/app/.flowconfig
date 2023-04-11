@@ -1,11 +1,22 @@
-[ignore]
-
 [include]
+../../node_modules/
+# Below line needed on Windows only, because Flow apparently does not support Windows "symlinks",
+# as https://github.com/facebook/flow/issues/4015
+../lib-a/
 
-[libs]
+[ignore]
+<PROJECT_ROOT>/dist/.*
+
+[declarations]
+.*/node_modules/.*
+# Below line needed on Windows only, because Flow apparently does not support Windows "symlinks",
+# and above in [include] this dir is included
+.*/packages/lib-a/.*
 
 [lints]
+all=warn
 
 [options]
-
-[strict]
+all=true
+#emoji=true
+use_mixed_in_catch_variables=true

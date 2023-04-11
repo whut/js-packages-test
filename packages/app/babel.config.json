@@ -1,0 +1,17 @@
+{
+  "sourceMaps": true,
+  "targets": {
+    "node": "18.4"
+  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "useBuiltIns": "usage",
+        "corejs": "3.30.0"
+      }
+    ],
+    ["@babel/preset-flow", { "all": true }]
+  ]
+}

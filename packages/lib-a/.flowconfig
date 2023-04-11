@@ -1,11 +1,22 @@
-[ignore]
-
 [include]
+../../node_modules/
 
-[libs]
+
+
+
+[ignore]
+<PROJECT_ROOT>/dist/.*
+
+[declarations]
+.*/node_modules/.*
+
+
+
 
 [lints]
+all=warn
 
 [options]
-
-[strict]
+all=true
+#emoji=true
+use_mixed_in_catch_variables=true
