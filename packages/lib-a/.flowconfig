@@ -1,4 +1,6 @@
 [include]
+# This line needed as with NPM workspace common dependencies are in root folder
+# TODO use npm linked install-mode (when stable) or pnpm to not have too many modules checked by flow
 ../../node_modules/
 
 
@@ -6,6 +8,7 @@
 
 [ignore]
 <PROJECT_ROOT>/dist/.*
+.*/node_modules/prettier/.*
 
 [declarations]
 .*/node_modules/.*
