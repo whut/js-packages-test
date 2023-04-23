@@ -11,4 +11,4 @@ console.log(hello())
 //   await delay(1000)
 // }
 
-export class Dupa {}
+export class Dupa {   }

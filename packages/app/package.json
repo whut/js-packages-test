@@ -9,8 +9,8 @@
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
     "build:babel-only": "babel src --out-dir lib --source-maps",
-    "lint": "eslint src",
-    "pretty": "prettier src --check"
+    "lint": "eslint src --cache",
+    "pretty": "prettier src --check --cache"
   },
   "dependencies": {
     "core-js": "^3.29.1",

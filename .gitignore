@@ -1,3 +1,6 @@
 /node_modules/
 /packages/*/lib/
 /packages/*/dist/
+# Prettier cache
+/packages/app/node_modules/.cache/
+/packages/*/.eslintcache

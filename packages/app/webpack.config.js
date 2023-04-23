@@ -5,7 +5,7 @@ export default {
   experiments: {
     // outputModule: true,
   },
-  // target: 'browserslist',
+  target: 'browserslist',
   devtool: 'source-map',
   entry: './src/index.js',
   output: {
@@ -27,10 +27,25 @@ export default {
         use: {
           loader: 'babel-loader',
           options: {
-            // cacheDirectory: true,
+            cacheDirectory: true,
+            // sourceMaps: true,
+            comments: false,
+            presets: [
+              [
+                '@babel/preset-env',
+                {
+                  useBuiltIns: 'usage',
+                  corejs: {
+                    version: '3.29',
+                    proposals: true,
+                  },
+                  modules: false,
+                  debug: true,
+                },
+              ],
+            ],
           },
         },
-        // exclude: /node_modules/u,
         exclude: /node_modules/u,
       },
     ],
