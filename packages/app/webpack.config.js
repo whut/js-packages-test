@@ -17,11 +17,20 @@ export default {
     ),
     filename: 'bundle.js',
   },
+  //   optimization: {
+  //     minimize: false,
+  //   },
   module: {
     rules: [
       {
         test: /\.js$/u,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            // cacheDirectory: true,
+          },
+        },
+        // exclude: /node_modules/u,
         exclude: /node_modules/u,
       },
     ],

@@ -7,6 +7,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "ignorePatterns": [
+    "packages/*/lib/",
+    "packages/*/dist/"
+  ],
+  "plugins": [
+    "unicorn"
+  ],
   "extends": [
     "eslint:all",
     "plugin:unicorn/all",
@@ -45,9 +52,5 @@
     "capitalized-comments": "off",
     "no-console": "off",
     "sort-keys": "off"
-  },
-  "ignorePatterns": [
-    "packages/*/lib/",
-    "packages/*/dist/"
-  ]
+  }
 }

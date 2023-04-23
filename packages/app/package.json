@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "main": "lib/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "build:babel-only": "babel src --out-dir lib --source-maps"
+    "build:babel-only": "babel src --out-dir lib --source-maps",
+    "lint": "eslint src",
+    "pretty": "prettier src --check"
   },
   "dependencies": {
+    "core-js": "^3.29.1",
     "lib-a": "^1.0.0"
   },
   "devDependencies": {
