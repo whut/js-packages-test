@@ -1,0 +1,28 @@
+{
+  "name": "lib-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "build": "babel src --out-dir dist",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "eslint": "^8.37.0",
+    "eslint-plugin-unicorn": "^46.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "shx": "^0.3.4"
+  },
+  "dependencies": {
+    "babel-jest": "^29.5.0"
+  }
+}
